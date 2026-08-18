@@ -153,4 +153,50 @@ body {
   width: 100%;
 }
 
+.card {
+  width: 170px;
+  min-height: 120px;
+  padding: 14px;
+  border-radius: 2px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  word-break: break-word;
+  background-color: #fae890;
+}
 
+.card-title {
+  font-family: "Permanent Marker", cursive;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  color: #2c2c2c;
+}
+
+.card-content {
+  font-family: "Permanent Marker", cursive;
+  font-size: 0.8rem;
+  line-height: 1.25;
+  color: #4c4c4c;
+  flex-grow: 1;
+}
+
+.card-color-1 {
+  background-color: #ead3a7;
+}
+
+.card-color-2 {
+  background-color: #9de0f5;
+}
+
+.card-color-3 {
+  background-color: #ef89ba;
+}
+
+.card-color-4 {
+  background-color: #fae890;
+}
+
+.card-color-5 {
+  background-color: #abe9c1;
+}
