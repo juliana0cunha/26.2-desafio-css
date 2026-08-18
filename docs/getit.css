@@ -22,27 +22,98 @@ Algumas informações úteis e dicas:
   - Sombra: https://codepen.io/sdthornton/pen/wBZdXq
  */
 
+/* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 html,
 body {
   font-family: "Roboto", sans-serif;
+  background-color: #ffffff;
+  color: #2c2c2c;
+}
+*/
+
+.appbar {
+  background-color: #f7d736;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
-/* Você pode usar o CSS comentado abaixo, se ajudar */
-/* Fonte: https://codepen.io/CrisWoler/pen/ogXBLj */
-/* .btn {
+.logo {
+  height: 38px;
+  width: auto;
+}
+
+.subtitle {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #2c2c2c;
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 36px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-card {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 440px;
+  border-radius: 4px;
+  padding: 18px 20px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.form-card-title {
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #2c2c2c;
+  width: 100%;
+}
+
+.autoresize-textarea {
+  border: none;
+  outline: none;
+  resize: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.85rem;
+  color: #4c4c4c;
+  width: 100%;
+  min-height: 48px;
+}
+
+.btn {
   position: relative;
   display: block;
   padding: 10px 15px;
-
   overflow: hidden;
-
   border-width: 0;
   outline: none;
   border-radius: 2px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
-
   background-color: #f7d736;
-
+  color: #2c2c2c;
+  font-weight: bold;
+  font-size: 0.85rem;
+  cursor: pointer;
+  width: 100%;
   transition: background-color 0.3s;
 }
 
@@ -52,19 +123,14 @@ body {
 
 .btn:before {
   content: "";
-
   position: absolute;
   top: 50%;
   left: 50%;
-
   display: block;
   width: 0;
   padding-top: 0;
-
   border-radius: 100%;
-
   background-color: rgba(236, 240, 241, 0.3);
-
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -75,6 +141,16 @@ body {
 .btn:active:before {
   width: 120%;
   padding-top: 120%;
-
   transition: width 0.2s ease-out, padding-top 0.2s ease-out;
-} */
+}
+
+ 
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+
